@@ -350,7 +350,7 @@ const increaseAge = (req, res) => {
     age: doc.age,
   }))
 
-  //Catch errors
+  //Catch errors 
     .catch((err) => {
       console.log(err);
       return res.status(500).json({ error: 'Something went wrong' });
